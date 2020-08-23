@@ -1,0 +1,29 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 2rem;
+
+            a {
+                padding: 1rem;
+                display: block;
+                color: $color-white;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    padding-bottom: calc(1rem - 2px);
+                    border-bottom: 2px solid $color-white;
+                }
+            }
+
+        }
+    }
+}
