@@ -12,8 +12,9 @@ module.exports = {
   mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, './'),
-    index: 'fanpage.html',
-    port: 9000
+    index: 'index.html',
+    port: 9000,
+    watchContentBase: true
   },
   module: {
     rules: [
