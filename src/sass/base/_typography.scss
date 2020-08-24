@@ -15,7 +15,7 @@ body {
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: 7rem;
         font-weight: 400;
         letter-spacing: 1rem;
     
@@ -45,12 +45,15 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    //background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    //-webkit-background-clip: text;
+    //color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -60,16 +63,53 @@ body {
         font-size: 2.5rem;
     }
 
-    &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    }
+    //&:hover {
+    //    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    //    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    //}
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
+    width: 100%;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: '';
+        width: 5rem;
+        height: 1px;
+        background: $color-secondary;
+    }
+
+    &::before {
+        margin-right: 1rem;
+    }
+
+    &::after {
+        margin-left: 1rem;
+    }
+}
+
+.heading-underline--primary::after,
+.heading-underline--secondary::after {
+    content: '';
+    width: 15rem;
+    height: .6rem;
+    border: none;
+}
+
+.heading-underline--primary::after {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+}
+
+.heading-underline--secondary::after {
+    background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
 }
 
 .paragraph {
@@ -78,4 +118,12 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.no-js {
+    width: 100%;
+    color: $color-primary;
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem;
 }

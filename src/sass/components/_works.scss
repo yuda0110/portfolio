@@ -1,0 +1,55 @@
+.portfolio {
+    background: $color-grey-light-2;
+    color: $color-grey-dark-3;
+
+    &__list {
+        margin-top: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 46%;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        margin: 1.6rem 0;
+        width: 100%;
+    }
+
+    &__btn-container {
+        width: 23rem;
+        margin-bottom: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        margin-bottom: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    &__tech-list {
+        margin-bottom: 1.6rem;
+        font-size: 1.2rem;
+        color: $color-white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tech-item {
+        margin: 0 1.5rem 1.5rem 0;
+        padding: .5rem 1rem;
+        background: $color-grey-dark;
+        border-radius: .3rem;
+    }
+}

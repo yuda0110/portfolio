@@ -4,7 +4,7 @@ const portfolioList = [
   {
     title: 'Roadtrip Planner',
     image: `${imageDir}portfolio-travelligence.jpg`,
-    pageLink: 'https://blue-project-2.herokuapp.com/',
+    pageLink: 'https://yuko-roadtrip-planner.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/Travelligence',
     description: 'This MERN application is a roadtrip planner where the user can enter their desired trips name, origin, destination, and stopover points which the google maps Directions API will use to calculate and display your road trip.\n' +
       '\n' +
@@ -30,7 +30,7 @@ const portfolioList = [
   {
     title: 'Google Books Search',
     image: `${imageDir}portfolio-travelligence.jpg`,
-    pageLink: 'https://yuko-roadtrip-planner.herokuapp.com/',
+    pageLink: 'https://yuko-google-books-search.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/GoogleBooksSearch',
     description: 'React-based Google Books Search app. This project requires to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Used Node, Express and MongoDB so that users can save books to review or purchase later. Also use React routing and socket.io to create a notification that triggers whenever a user saves a book.',
     techs: [

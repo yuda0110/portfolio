@@ -4,22 +4,15 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
         display: flex;
         align-items: center;
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: $default-font-size;
 
         //Change for the <button> element
         border: none;
         cursor: pointer;
-
-        ion-icon {
-            margin-left: 1rem;
-            font-size: 3rem;
-        }
     }
     
     &:hover {
@@ -37,6 +30,26 @@
         outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+    &--l {
+        padding: 1.5rem 4rem;
+        font-size: $default-font-size;
+
+        ion-icon {
+            margin-left: 1rem;
+            font-size: 3rem;
+        }
+    }
+
+    &--m {
+        padding: .6rem 2rem;
+        font-size: 1.3rem;
+
+        ion-icon {
+            margin-left: .6rem;
+            font-size: 2rem;
+        }
     }
     
     &--white {
