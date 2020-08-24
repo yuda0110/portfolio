@@ -5,10 +5,10 @@
     &__sub-section {
 
         &:not(:last-of-type) {
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
 
             @include respond(phone) {
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
             }
         }
     }
@@ -65,13 +65,19 @@
         //background: $color-secondary-light;
     }
 
-    &__links-list {
+    &__links-list,
+    &__contact-list {
         margin-top: 4rem;
         display: flex;
         justify-content: space-evenly;
 
         @include respond(phone) {
             margin-top: 2rem;
+        }
+
+        @include respond(small-phone) {
+            flex-direction: column;
+            align-items: center;
         }
 
         a,
@@ -95,6 +101,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include respond(small-phone) {
+            margin-bottom: 2rem;
+        }
+
         ion-icon {
             font-size: 6rem;
         }
@@ -104,6 +114,21 @@
             font-size: 1.3rem;
             text-transform: capitalize;
             color: $color-grey-dark;
+        }
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+
+        @include respond(small-phone) {
+            margin-bottom: 2rem;
+        }
+
+        ion-icon {
+            margin-right: 1rem;
+            font-size: 3rem;
         }
     }
 
