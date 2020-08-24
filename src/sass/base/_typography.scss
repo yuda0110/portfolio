@@ -101,7 +101,12 @@ body {
     content: '';
     width: 15rem;
     height: .6rem;
+    margin-bottom: 6rem;
     border: none;
+
+    @include respond(phone) {
+        margin-bottom: 3rem;
+    }
 }
 
 .heading-underline--primary::after {

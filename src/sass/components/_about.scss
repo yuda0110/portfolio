@@ -1,0 +1,110 @@
+.about {
+    background: $color-grey-light-2;
+    color: $color-grey-dark-3;
+
+    &__sub-section {
+
+        &:not(:last-of-type) {
+            margin-bottom: 4rem;
+
+            @include respond(phone) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__intro {
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        @include respond(small-phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__my-photo {
+        width: 20rem;
+        height: 20rem;
+        margin-right: 3rem;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        @include respond(small-phone) {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+
+        &--image {
+            //width: 10rem;
+            //height: 10rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -18.5rem);
+
+            @include respond(tab-port) {
+                transform: translate(-50%, -21.5rem);
+            }
+        }
+    }
+
+    &__introduction {
+        font-size: 1.6rem;
+        flex-shrink: 1;
+    }
+
+    &__links,
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        //background: $color-secondary-light;
+    }
+
+    &__links-list {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+        }
+
+        a,
+        a:link,
+        a:active,
+        a:visited {
+            text-decoration: none;
+            color: $color-grey-dark-3;
+        }
+
+        a,
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+
+    &__links-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ion-icon {
+            font-size: 6rem;
+        }
+
+        small {
+            margin-top: .5rem;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            color: $color-grey-dark;
+        }
+    }
+
+}
