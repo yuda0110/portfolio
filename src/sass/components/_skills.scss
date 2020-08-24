@@ -1,0 +1,29 @@
+.skills {
+    color: $color-white;
+
+    &__list {
+        margin-top: 6rem;
+        padding: 4rem 4rem 2rem;
+        background: rgba(255, 255, 255, .4);
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        color: $color-white;
+
+        @include respond(phone) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        padding: .5rem 1rem;
+        background: $color-secondary-dark;
+        border-radius: .4rem;
+
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+}
