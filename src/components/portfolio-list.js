@@ -3,7 +3,7 @@ const imageDir = './assets/images/works/';
 const portfolioList = [
   {
     title: 'Roadtrip Planner',
-    image: `${imageDir}portfolio-travelligence.jpg`,
+    image: `${imageDir}portfolio-roadtrip.jpg`,
     pageLink: 'https://yuko-roadtrip-planner.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/Travelligence',
     description: 'This MERN application is a roadtrip planner where the user can enter their desired trips name, origin, destination, and stopover points which the google maps Directions API will use to calculate and display your road trip.\n' +
@@ -29,7 +29,7 @@ const portfolioList = [
   },
   {
     title: 'Google Books Search',
-    image: `${imageDir}portfolio-travelligence.jpg`,
+    image: `${imageDir}portfolio-googlebook.jpg`,
     pageLink: 'https://yuko-google-books-search.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/GoogleBooksSearch',
     description: 'React-based Google Books Search app. This project requires to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Used Node, Express and MongoDB so that users can save books to review or purchase later. Also use React routing and socket.io to create a notification that triggers whenever a user saves a book.',
@@ -47,14 +47,14 @@ const portfolioList = [
   },
   {
     title: 'Clicky Game',
-    image: `${imageDir}portfolio-travelligence.jpg`,
+    image: `${imageDir}portfolio-clickygame.jpg`,
     pageLink: 'https://yuda0110.github.io/ClickyGame/',
     codeLink: 'https://github.com/yuda0110/ClickyGame',
     description: 'A memory game with React. This assignment will require to break up your application\'s UI into components, manage component state, and respond to user events.',
     techs: [
       'JavaScript',
       'Node.js',
-      'Create React App',
+      'React.js',
       'gh-pages'
     ]
   },
@@ -62,15 +62,25 @@ const portfolioList = [
     title: 'Travelligence',
     image: `${imageDir}portfolio-travelligence.jpg`,
     pageLink: 'https://blue-project-2.herokuapp.com/',
-    codeLink: 'https://github.com/yuda0110/Travelligence',
-    description: 'description',
+    codeLink: 'https://github.com/Adoni0/blue-project-2',
+    description: 'This project is travel application for people who can’t decide where to take their next vacation. The application prompts the user to fill out a simple sign up form and our algorithm utilizes data from the users location, estimated age, estimated culture, and a few uploaded photos to recommend a country to visit.',
     techs: [
-
+      'JavaScript',
+      'jQuery',
+      'Node.js',
+      'Express',
+      'Express-handlebars',
+      'Microsoft Computer Vision API',
+      'Passport',
+      'geoip-lite',
+      'agify.io',
+      'nationalize.io',
+      'genderize.io'
     ]
   },
   {
     title: 'JS News Scraper',
-    image: `${imageDir}portfolio-burger.jpg`,
+    image: `${imageDir}portfolio-newscraper.jpg`,
     pageLink: 'https://yuko-news-scraper.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/NewsScraper',
     description: 'A web app that lets users view and leave comments on the latest news. The app scrapes stories from a news outlet and update the articles listed on the page when a user clicks on the load button.',
@@ -107,7 +117,7 @@ const portfolioList = [
   },
   {
     title: 'Friend Finder',
-    image: `${imageDir}portfolio-burger.jpg`,
+    image: `${imageDir}portfolio-friendfinder.jpg`,
     pageLink: 'https://yuko-friend-finder.herokuapp.com/',
     codeLink: 'https://github.com/yuda0110/friend-finder',
     description: 'A compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users\' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.',
@@ -120,6 +130,70 @@ const portfolioList = [
       'Nodemon',
       'Path',
       'Ionicons'
+    ]
+  },
+  {
+    title: 'Bamazon',
+    image: `${imageDir}portfolio-bamazon.jpg`,
+    pageLink: 'https://github.com/yuda0110/bamazon#what-each-command-should-do',
+    codeLink: 'https://github.com/yuda0110/bamazon',
+    description: 'Amazon-like storefront with the MySQL. There are 3 parts to the app.\n' +
+      '\n' +
+      'The 1st part, bamazonCustomer takes in orders from customers and deplete stock from the store\'s inventory.\n' +
+      '\n' +
+      'The 2nd part, bamazonManager shows products for sale, shows low inventory, adds to inventory, and adds new product.\n' +
+      '\n' +
+      'The 3rd part, bamazonSupervisor shows product sales by department and creates new department.',
+    techs: [
+      'JavaScript',
+      'Node.js',
+      'MySQL',
+      'inquirer',
+      'Console-table-printer'
+    ]
+  },
+  {
+    title: 'LIRI Bot',
+    image: `${imageDir}portfolio-liri.jpg`,
+    pageLink: 'https://github.com/yuda0110/liri-node-app#what-each-command-should-do',
+    codeLink: 'https://github.com/yuda0110/liri-node-app',
+    description: 'LIRI is like iPhone\'s SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.',
+    techs: [
+      'JavaScript',
+      'Node.js',
+      'Node-Spotify-API',
+      'Axios',
+      'Moment',
+      'DotEnv',
+      'fs'
+    ]
+  },
+  {
+    title: 'GifTastic',
+    image: `${imageDir}portfolio-giftastic.jpg`,
+    pageLink: 'https://yuda0110.github.io/GifTastic/',
+    codeLink: 'https://github.com/yuda0110/GifTastic',
+    description: 'Use the GIPHY API to make a dynamic web page that populates with gifs of your choice.',
+    techs: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'jQuery',
+      'GIPHY API',
+      'localStorage'
+    ]
+  },
+  {
+    title: 'Star Wars RPG Game',
+    image: `${imageDir}portfolio-starwars.jpg`,
+    pageLink: 'https://yuda0110.github.io/unit-4-game/',
+    codeLink: 'https://github.com/yuda0110/GifTastic',
+    description: 'Interactive game for web browsers. Dynamically update the HTML pages with the jQuery.',
+    techs: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'jQuery'
     ]
   }
 ];

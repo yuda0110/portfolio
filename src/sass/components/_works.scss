@@ -23,13 +23,18 @@
     &__img {
         margin: 1.6rem 0;
         width: 100%;
+        border: 1px solid $color-white;
+        box-shadow: 0 .7rem .7rem rgba(0, 0, 0, .2);
     }
 
     &__btn-container {
-        width: 23rem;
         margin-bottom: 1.6rem;
         display: flex;
         justify-content: space-between;
+
+        .btn:not(:last-of-type) {
+            margin-right: 2rem;
+        }
     }
 
     &__desc {

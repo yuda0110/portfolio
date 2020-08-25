@@ -12,14 +12,20 @@ const renderPortfolio = () => {
     const titleEl = $('<h3 class="heading-tertiary">').text(item.title);
     const imgEl = $(`<img src=${item.image} class="portfolio__img"/>`);
     const btnContainerEl = $('<div class="portfolio__btn-container">');
-    btnContainerEl.append(`
+    if (item.pageLink) {
+      btnContainerEl.append(`
       <a class="btn btn--m btn--pink" href="${item.pageLink}" target="_blank">
         Demo<ion-icon name="link"></ion-icon>
       </a>
+    `);
+    }
+    if (item.codeLink) {
+      btnContainerEl.append(`
       <a class="btn btn--m btn--pink" href="${item.codeLink}" target="_blank">
         Code<ion-icon name="link"></ion-icon>
       </a>
     `);
+    }
     const descEl = $('<p class="portfolio__desc">').text(item.description);
     const techListEl = $('<ul class="portfolio__tech-list">');
 
