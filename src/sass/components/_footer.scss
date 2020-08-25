@@ -1,0 +1,11 @@
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    color: $color-grey-dark-2;
+    font-weight: 300;
+
+    &__important {
+        color: $color-primary;
+    }
+}
