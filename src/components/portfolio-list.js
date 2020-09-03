@@ -62,7 +62,7 @@ const portfolioList = [
     title: 'Travelligence',
     image: `${imageDir}portfolio-travelligence.jpg`,
     pageLink: 'https://blue-project-2.herokuapp.com/',
-    codeLink: 'https://github.com/Adoni0/blue-project-2',
+    codeLink: 'https://github.com/yuda0110/Travelligence',
     description: 'This project is travel application for people who can’t decide where to take their next vacation. The application prompts the user to fill out a simple sign up form and our algorithm utilizes data from the users location, estimated age, estimated culture, and a few uploaded photos to recommend a country to visit.',
     techs: [
       'JavaScript',
@@ -70,6 +70,8 @@ const portfolioList = [
       'Node.js',
       'Express',
       'Express-handlebars',
+      'Axios',
+      'Sequelize',
       'Microsoft Computer Vision API',
       'Passport',
       'geoip-lite',
