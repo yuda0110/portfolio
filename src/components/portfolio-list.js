@@ -5,7 +5,7 @@ const portfolioList = [
     title: 'Roadtrip Planner',
     image: `${imageDir}portfolio-roadtrip.jpg`,
     pageLink: 'https://yuko-roadtrip-planner.herokuapp.com/',
-    codeLink: 'https://github.com/yuda0110/Travelligence',
+    codeLink: 'https://github.com/yuda0110/RoadtripPlanner',
     description: 'This MERN application is a roadtrip planner where the user can enter their desired trips name, origin, destination, and stopover points which the google maps Directions API will use to calculate and display your road trip.\n' +
       '\n' +
       'Based off your journey\'s desired stopover points, we utilize the YELP API to show you the highest rated restaurants at the area of your stop that fit your budget.\n' +
